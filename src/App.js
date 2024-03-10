@@ -10,16 +10,32 @@ function App() {
     const [category,setCattegory]=useState([]);
     const [searchInput,setSearchInput]=useState('');
     const [changeTab,setChangeTab]=useState(0);
+    const [isLoading,setIsLoading]=useState(true);
     useEffect(() => {
-        // Поскольку данные уже импортированы, вы можете напрямую использовать переменную `data`
-        setCollections(data.collections);
-        setCattegory(data.categories)
-        console.log(data.collections);
-    }, []);
+        setIsLoading(true)
+        const fetchData = async () => {
+            try {
+                const response = await fetch('./data.json');
+                const data = await response.json();
+                setCollections(data.collections);
+                setCattegory(data.categories);
+
+            } catch (error) {
+                alert('Ошибка при загрузке данных:');
+            }
+            finally {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+        };
+        fetchData();
+    }, [changeTab]);
 
     function onChangeTab(index){
         setChangeTab(index)
     }
+
 
   return (
     <div className="App">
@@ -46,20 +62,15 @@ function App() {
                   }
               }).map((obj,index)=>(
                   <Collection
-                      category={changeTab}
                       key={index}
                       name={obj.name}
                       images={obj.photos}
+                      isLoading={isLoading}
                   />
               ))
           }
 
       </div>
-      <ul className="pagination">
-        <li>1</li>
-        <li className="active">2</li>
-        <li>3</li>
-      </ul>
     </div>
   );
 }

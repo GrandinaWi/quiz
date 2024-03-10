@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4fd384-d6d3-4836-9696-e812de46b3b7" name="Changes" comment="" />
+    <list default="true" id="3f4fd384-d6d3-4836-9696-e812de46b3b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,13 +41,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "photos",
+    "git-widget-placeholder": "photo-code",
     "last_opened_file_path": "C:/Users/vadga/react/react-beginner-projects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,7 +70,8 @@
       <workItem from="1709614140460" duration="505000" />
       <workItem from="1709657192289" duration="5434000" />
       <workItem from="1709836919994" duration="173000" />
-      <workItem from="1710084987573" duration="3738000" />
+      <workItem from="1710084987573" duration="4172000" />
+      <workItem from="1710098829629" duration="2037000" />
     </task>
     <servers />
   </component>
